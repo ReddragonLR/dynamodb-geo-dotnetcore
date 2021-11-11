@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB73F9E8-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{701B853F-301A-4D8F-96E0-4D880327C21A}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 		GitVersion.yml = GitVersion.yml
 	EndProjectSection
 EndProject

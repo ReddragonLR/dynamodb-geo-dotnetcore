@@ -10,13 +10,23 @@ jobs:
   build:
     name: Build and Test Solution
     runs-on: ubuntu-latest
+    outputs:
+      semVer: ${{ steps.gitversion.outputs.semVer }}
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.x
+    - name: Determine Version
+      id: gitversion
+      uses: gittools/actions/gitversion/execute@v0.9.7
+      with:
+        useConfigFile: true
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -29,13 +39,16 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Publish DynamoDB.Geo.Contract
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
         PROJECT_FILE_PATH: src/DynamoDB.Geo.Contract/DynamoDB.Geo.Contract.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        VERSION_STATIC: ${{ needs.build.outputs.semVer }}
     - name: Publish DynamoDB.Geo
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
         PROJECT_FILE_PATH: src/DynamoDB.Geo/DynamoDB.Geo.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        VERSION_STATIC: ${{ needs.build.outputs.semVer }}
