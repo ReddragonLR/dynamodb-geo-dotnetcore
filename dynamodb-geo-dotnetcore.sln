@@ -9,20 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB73F9E8-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{701B853F-301A-4D8F-96E0-4D880327C21A}"
 	ProjectSection(SolutionItems) = preProject
-		github-actions.yml = github-actions.yml
 		GitVersion.yml = GitVersion.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoDB.Geo", "src\DynamoDB.Geo\DynamoDB.Geo.csproj", "{8927362D-7C1E-402F-8353-20261D706F59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoDB.Geo.Contract", "src\DynamoDB.Geo.Contract\DynamoDB.Geo.Contract.csproj", "{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoDB.Geo.Contract", "src\DynamoDB.Geo.Contract\DynamoDB.Geo.Contract.csproj", "{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9184A52-EB08-4898-A92E-8529083A4691}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoDB.Geo.Tests", "test\DynamoDB.Geo.Tests\DynamoDB.Geo.Tests.csproj", "{C99029E2-6FAF-4626-8F74-D450FF71F138}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoDB.Geo.Tests", "test\DynamoDB.Geo.Tests\DynamoDB.Geo.Tests.csproj", "{C99029E2-6FAF-4626-8F74-D450FF71F138}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

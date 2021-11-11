@@ -39,62 +39,62 @@ namespace DynamoDB.Geo.Tests
         {
             List<QueryResponse> mockResponses = new List<QueryResponse>();
 
-            var path1 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data.json");
+            var path1 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data.json");
             if (!File.Exists(path1))
                 throw new Exception("File not found");
             string text1 = File.ReadAllText(path1);
 
-            var path2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-2.json");
+            var path2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-2.json");
             if (!File.Exists(path2))
                 throw new Exception("File not found");
             string text2 = File.ReadAllText(path2);
 
-            var path3 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-3.json");
+            var path3 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-3.json");
             if (!File.Exists(path3))
                 throw new Exception("File not found");
             string text3 = File.ReadAllText(path3);
 
-            var path4 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-4.json");
+            var path4 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-4.json");
             if (!File.Exists(path4))
                 throw new Exception("File not found");
             string text4 = File.ReadAllText(path4);
 
-            var path5 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-5.json");
+            var path5 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-5.json");
             if (!File.Exists(path5))
                 throw new Exception("File not found");
             string text5 = File.ReadAllText(path5);
 
-            var path6 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-6.json");
+            var path6 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-6.json");
             if (!File.Exists(path6))
                 throw new Exception("File not found");
             string text6 = File.ReadAllText(path6);
 
-            var path7 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-7.json");
+            var path7 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-7.json");
             if (!File.Exists(path7))
                 throw new Exception("File not found");
             string text7 = File.ReadAllText(path7);
 
-            var path8 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-8.json");
+            var path8 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-8.json");
             if (!File.Exists(path8))
                 throw new Exception("File not found");
             string text8 = File.ReadAllText(path8);
 
-            var path9 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-9.json");
+            var path9 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-9.json");
             if (!File.Exists(path9))
                 throw new Exception("File not found");
             string text9 = File.ReadAllText(path9);
 
-            var path10 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-10.json");
+            var path10 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-10.json");
             if (!File.Exists(path10))
                 throw new Exception("File not found");
             string text10 = File.ReadAllText(path10);
 
-            var path11 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-11.json");
+            var path11 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-11.json");
             if (!File.Exists(path11))
                 throw new Exception("File not found");
             string text11 = File.ReadAllText(path11);
 
-            var path12 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData\\mock-data-12.json");
+            var path12 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "mock-data-12.json");
             if (!File.Exists(path12))
                 throw new Exception("File not found");
             string text12 = File.ReadAllText(path12);
