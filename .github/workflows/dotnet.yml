@@ -53,9 +53,11 @@ jobs:
         PROJECT_FILE_PATH: src/DynamoDB.Geo.Contract/DynamoDB.Geo.Contract.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
         VERSION_STATIC: ${{ needs.build.outputs.semVer }}
+        PACKAGE_NAME: DynamoDB.GeoSpatial.Contract
     - name: Publish DynamoDB.Geo
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
         PROJECT_FILE_PATH: src/DynamoDB.Geo/DynamoDB.Geo.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
         VERSION_STATIC: ${{ needs.build.outputs.semVer }}
+        PACKAGE_NAME: DynamoDB.GeoSpatial
