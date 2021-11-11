@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7CE2B9FF-CAA1-48C5-8BFA-AB60AC574505}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB73F9E8-1C57-47B3-AB17-A9E01A6C1AF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{701B853F-301A-4D8F-96E0-4D880327C21A}"
+	ProjectSection(SolutionItems) = preProject
+		github-actions.yml = github-actions.yml
+		GitVersion.yml = GitVersion.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoDB.Geo", "src\DynamoDB.Geo\DynamoDB.Geo.csproj", "{8927362D-7C1E-402F-8353-20261D706F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoDB.Geo.Contract", "src\DynamoDB.Geo.Contract\DynamoDB.Geo.Contract.csproj", "{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9184A52-EB08-4898-A92E-8529083A4691}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoDB.Geo.Tests", "test\DynamoDB.Geo.Tests\DynamoDB.Geo.Tests.csproj", "{C99029E2-6FAF-4626-8F74-D450FF71F138}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8927362D-7C1E-402F-8353-20261D706F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Debug|x64.Build.0 = Debug|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Debug|x86.Build.0 = Debug|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Release|x64.ActiveCfg = Release|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Release|x64.Build.0 = Release|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Release|x86.ActiveCfg = Release|Any CPU
+		{8927362D-7C1E-402F-8353-20261D706F59}.Release|x86.Build.0 = Release|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Debug|x64.Build.0 = Debug|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Debug|x86.Build.0 = Debug|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Release|x64.ActiveCfg = Release|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Release|x64.Build.0 = Release|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2}.Release|x86.Build.0 = Release|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Debug|x64.Build.0 = Debug|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Debug|x86.Build.0 = Debug|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Release|x64.ActiveCfg = Release|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Release|x64.Build.0 = Release|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Release|x86.ActiveCfg = Release|Any CPU
+		{C99029E2-6FAF-4626-8F74-D450FF71F138}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8927362D-7C1E-402F-8353-20261D706F59} = {7CE2B9FF-CAA1-48C5-8BFA-AB60AC574505}
+		{4E8AB0B8-B83C-4750-8564-6C95B16F48F2} = {7CE2B9FF-CAA1-48C5-8BFA-AB60AC574505}
+		{C99029E2-6FAF-4626-8F74-D450FF71F138} = {EB73F9E8-1C57-47B3-AB17-A9E01A6C1AF0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7646EC1-C5DF-40F3-A3A9-A3EF0634CB47}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+{
+  "ConsumedCapacity": {
+    "CapacityUnits": 1.0,
+    "GlobalSecondaryIndexes": {},
+    "LocalSecondaryIndexes": {},
+    "ReadCapacityUnits": 0.0,
+    "Table": null,
+    "TableName": "Stores",
+    "WriteCapacityUnits": 0.0
+  },
+  "Count": 0,
+  "Items": [],
+  "LastEvaluatedKey": {},
+  "ScannedCount": 0,
+  "ResponseMetadata": {
+    "RequestId": "F0RUJS3ABD9MVB9KPHBC6QRU9RVV4KQNSO5AEMVJF66Q9ASUAAJG",
+    "Metadata": {}
+  },
+  "ContentLength": 101,
+  "HttpStatusCode": 200
+}
