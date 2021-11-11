@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Build and Test Solution
     runs-on: ubuntu-latest
 
     steps:
@@ -24,6 +25,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
   publish-to-nuget:
+    name: Publish to Nuget.org
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Publish DynamoDB.Geo.Contract
