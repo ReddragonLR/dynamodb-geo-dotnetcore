@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +22,10 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+  publish-to-nuget:
+    runs-on: ubuntu-latest
+    steps:
     - name: Publish DynamoDB.Geo.Contract
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
