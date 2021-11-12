@@ -13,6 +13,18 @@ C# Port of the AWS DynamoDB GeoSpatial library inspired by https://github.com/no
 * **Customizable:** Access to raw request and result objects from the AWS SDK for .NET.
 * **DotnetCore DI ready:** GeoClientOptions and GeoClientExtension have been added to make it easier to incorporate via DI.
 
+##Installation
+Install via Nuget
+```Install-Package DynamoDB.GeoSpatial.Contract```
+
+Implementation of Contract
+```Install-Package DynamoDB.GeoSpatial```
+
+##Usage
+```
+TBC...
+```
+
 ##Limitations
 
 ###No composite key support
