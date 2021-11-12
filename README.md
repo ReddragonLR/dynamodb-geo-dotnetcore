@@ -1,6 +1,8 @@
 # dynamodb-geo-dotnetcore
 =========================
 
+[![.NET](https://github.com/ReddragonLR/dynamodb-geo-dotnetcore/actions/workflows/dotnet.yml/badge.svg?branch=master)](https://github.com/ReddragonLR/dynamodb-geo-dotnetcore/actions/workflows/dotnet.yml)
+
 C# Port of the AWS DynamoDB GeoSpatial library inspired by https://github.com/novotnyllc/dynamodb-geo-csharp
 
 ##Features
