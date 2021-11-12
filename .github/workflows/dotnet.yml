@@ -37,7 +37,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration Release
     - name: Test
       run: dotnet test --no-build --verbosity normal
 
@@ -47,17 +47,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Publish DynamoDB.Geo.Contract
-      uses: brandedoutcast/publish-nuget@v2.5.2
+
+    - name: Update Package Version
+      uses: cschleiden/replace-tokens@v1
       with:
-        PROJECT_FILE_PATH: src/DynamoDB.Geo.Contract/DynamoDB.Geo.Contract.csproj
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-        VERSION_STATIC: ${{ needs.build.outputs.semVer }}
-        PACKAGE_NAME: DynamoDB.GeoSpatial.Contract
-    - name: Publish DynamoDB.Geo
-      uses: brandedoutcast/publish-nuget@v2.5.2
+        files: '["**/*.nuspec"]'
+      env:
+        VERSION: ${{ needs.build.outputs.semVer }}
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
       with:
-        PROJECT_FILE_PATH: src/DynamoDB.Geo/DynamoDB.Geo.csproj
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-        VERSION_STATIC: ${{ needs.build.outputs.semVer }}
-        PACKAGE_NAME: DynamoDB.GeoSpatial
+        dotnet-version: 3.1.x
+
+    - name: Pack DynamoDB.Geo.Contract
+      run: dotnet pack ~/src/DynamoDB.Geo.Contract/DynamoDB.Geo.Contract.csproj --configuration Release -p:PackageVersion=${{ needs.build.outputs.semVer }} -p:NuspecFile=~/dynamodb-geo-contract.nuspec
+
+    - name: Publish DynamoDB
+      run: dotnet nuget push bin/Release/DynamoDB.GeoSpatial.Contract.${{ needs.build.outputs.semVer }}.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+      <id>DynamoDB.GeoSpatial</id>
+      <version>#{VERSION}#</version>
+      <authors>lishen.ramsudh</authors>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+      <description>Implementation of the DynamoDB.GeoSpatial.Contract. The Geo Library for Amazon DynamoDB enables .NET developers to easily create and query geospatial data. Adapted from clairernovotny. This version targets .NET Core 3.1.</description>
+      <repository type="git" url="https://github.com/ReddragonLR/dynamodb-geo-dotnetcore.git"/>
+      <dependencies>
+        <dependency id="DynamoDB.GeoSpatial.Contract" version="1.0.*"/>
+        <dependency id="Microsoft.Extensions.Options" version="3.1.19"/>
+      </dependencies>
+    </metadata>
+  <files>
+    <file src="bin\Release\netcoreapp3.1\DynamoDB.Geo.dll" target="lib\netcoreapp3.1\DynamoDB.Geo.dll" />
+    <file src="bin\Release\netcoreapp3.1\DynamoDB.Geo.pdb" target="lib\netcoreapp3.1\DynamoDB.Geo.pdb" />
+  </files>
+</package>
