@@ -23,6 +23,7 @@ jobs:
       uses: gittools/actions/gitversion/setup@v0.9.7
       with:
         versionSpec: 5.x
+
     - name: Determine Version
       id: gitversion
       uses: gittools/actions/gitversion/execute@v0.9.7
@@ -36,8 +37,10 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
+
     - name: Build
       run: dotnet build --no-restore --configuration Release
+
     - name: Test
       run: dotnet test --no-build --verbosity normal --configuration Release
 
@@ -64,4 +67,4 @@ jobs:
       run: dotnet pack ./src/DynamoDB.Geo.Contract/DynamoDB.Geo.Contract.csproj --configuration Release -p:PackageVersion=${{ needs.build.outputs.semVer }} -p:NuspecFile=./dynamodb-geo-contract.nuspec
 
     - name: Publish DynamoDB
-      run: dotnet nuget push bin/Release/DynamoDB.GeoSpatial.Contract.${{ needs.build.outputs.semVer }}.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./src/DynamoDB.Geo.Contract/bin/Release/DynamoDB.GeoSpatial.Contract.${{ needs.build.outputs.semVer }}.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
