@@ -2,6 +2,8 @@
 =========================
 
 [![.NET](https://github.com/ReddragonLR/dynamodb-geo-dotnetcore/actions/workflows/dotnet.yml/badge.svg?branch=master)](https://github.com/ReddragonLR/dynamodb-geo-dotnetcore/actions/workflows/dotnet.yml)
+[![NuGet Version](http://img.shields.io/nuget/v/DynamoDB.GeoSpatial.Contract.svg?style=flat)](https://www.nuget.org/packages/DynamoDB.GeoSpatial.Contract/) 
+[![NuGet Version](http://img.shields.io/nuget/v/DynamoDB.GeoSpatial.svg?style=flat)](https://www.nuget.org/packages/DynamoDB.GeoSpatial/) 
 
 C# Port of the AWS DynamoDB GeoSpatial library inspired by https://github.com/novotnyllc/dynamodb-geo-csharp
 
