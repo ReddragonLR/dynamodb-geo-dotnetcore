@@ -8,7 +8,7 @@
       <description>Implementation of the DynamoDB.GeoSpatial.Contract. The Geo Library for Amazon DynamoDB enables .NET developers to easily create and query geospatial data. Adapted from clairernovotny. This version targets .NET Core 3.1.</description>
       <repository type="git" url="https://github.com/ReddragonLR/dynamodb-geo-dotnetcore.git"/>
       <dependencies>
-        <dependency id="DynamoDB.GeoSpatial.Contract" version="1.0.*"/>
+        <dependency id="DynamoDB.GeoSpatial.Contract" version="0.1.*"/>
         <dependency id="Microsoft.Extensions.Options" version="3.1.19"/>
       </dependencies>
     </metadata>
