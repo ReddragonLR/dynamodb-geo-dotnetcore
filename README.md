@@ -7,7 +7,7 @@ DynamoDB.GeoSpatial.Contract [![NuGet Version](http://img.shields.io/nuget/v/Dyn
 
 DynamoDB.GeoSpatial [![NuGet Version](http://img.shields.io/nuget/v/DynamoDB.GeoSpatial.svg?style=flat)](https://www.nuget.org/packages/DynamoDB.GeoSpatial/) 
 
-C# Port of the AWS DynamoDB GeoSpatial library inspired by https://github.com/novotnyllc/dynamodb-geo-csharp
+C# Adaptation of the AWS DynamoDB GeoSpatial library inspired by https://github.com/novotnyllc/dynamodb-geo-csharp
 
 ##Features
 * **Box Queries:** Return all of the items that fall within a pair of geo points that define a rectangle as projected onto a sphere.
